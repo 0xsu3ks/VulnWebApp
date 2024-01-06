@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Thank You{% endblock %}
+
+{% block content %}
+    <div class="thank-you-message">
+        <h2>Thank You for Contacting Us!</h2>
+        <p>We will reply to your message soon.</p>
+        {{ hidden_response | safe }}
+
+        <!-- Testing parameters 0x213f7129 -->
+        <!-- Testing parameters AIGPTBOT -->
+    </div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Our Employees{% endblock %}
+
+{% block content %}
+    <h1>Meet Our Team</h1>
+    <div id="employees">
+        {% for employee in employees %}
+            <div class="employee">
+                <img src="{{ url_for('static', filename=employee.image) }}" alt="{{ employee.name }}">
+                <h2>{{ employee.name }}</h2>
+                <p><strong>{{ employee.position }}</strong></p>
+                <p>{{ employee.bio }}</p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
+

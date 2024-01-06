@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Investments{% endblock %}
+
+{% block content %}
+    <h1>Our Investments</h1>
+    <div class="investment-container">
+        <div class="investment-image">
+            <img src="{{ url_for('static', filename='investment.jpg') }}" alt="Investment Image">
+        </div>
+        <div class="investment-text">
+            <h2>AI Cybersecurity Professional</h2>
+            <p>Meet Alex, an AI Cybersecurity Professional.</p>
+            <p>In the rapidly evolving realm of cybersecurity, there's a professional who stands out for her exceptional skills and innovative approach: an AI cyber specialist named Alex Riviera. With a profound understanding of both artificial intelligence and cybersecurity, Alex has gained renown for constructing some of the most secure websites in the digital world, including this very platform. Her method intertwines advanced AI algorithms with cutting-edge security protocols, ensuring an almost impregnable defense against cyber threats. Alex's expertise lies in her ability to anticipate and counteract emerging cyber risks, integrating adaptive AI systems that learn and evolve to stay ahead of malicious hackers. Under her guidance, websites become fortresses of data protection, setting new standards in cybersecurity and earning her a reputation as a visionary in the field. Her work not only enhances the security of online spaces but also elevates the trust and reliability that users place in them.</p>
+        </div>
+    </div>
+{% endblock %}

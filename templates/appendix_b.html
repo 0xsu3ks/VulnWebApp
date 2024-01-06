@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}API Documentation{% endblock %}
+
+{% block content %}
+    <h1>API Documentation</h1>
+    <h2>Endpoints</h2>
+    <div class="api-endpoint">
+        <h3>/x5ndIOmP/v2/ping</h3>
+        <p>Description: This endpoint pings the localhost and returns a response indicating if the localhost is active.</p>
+        <p>Method: GET</p>
+        <p>Response: {"status": "success", "message": "Host is active"}</p>
+        <h3>/x5ndIOmP/v2/get_user</h3>
+        <p>Description: This endpoint gets the current user's profile.</p>
+        <p>Method: POST</p>
+        <p>Response: {}</p>
+        <h3>/x5ndIOmP/v2/exec</h3>
+        <p>Description: Debugging the webserver.</p>
+        <h3>/x5ndIOmP/v2/set_profile</h3>
+        <p>Description: Not implemented yet.</p>
+        <h3>/x5ndIOmP/v2/get_contact_response</h3>
+        <p>Description: Not implemented yet.</p>
+    </div>
+    <!-- You can add more endpoints here -->
+{% endblock %}
